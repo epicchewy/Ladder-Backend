@@ -30,11 +30,12 @@
 	$age = $player_data['age'];
 	$grade = $player_data['grade'];
 	$school = $player_data['school'];
+	$email = $player_data['email'];
 	
 	$long = (float) $player_data['longitude'];
 	$lat = (float) $player_data['latitude'];
 	
-	$query = array("summoner_name" => $summoner_name, "rank" => $rank, "mainRole" => $mainRole, "favChamp" => $favChamp, "age" => $age, "grade" => $grade, "school" => $school, "longitude" => $long, "latitude" => $lat); 
+	$query = array("summoner_name" => $summoner_name, "rank" => $rank, "mainRole" => $mainRole, "favChamp" => $favChamp, "age" => $age, "grade" => $grade, "school" => $school, "longitude" => $long, "latitude" => $lat, "email" => $email); 
 	
 
 	$players->insert($query);
