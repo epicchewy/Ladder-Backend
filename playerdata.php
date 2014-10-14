@@ -8,7 +8,7 @@
 	
 		
 
-	$player_data = $_GET['playerData'];
+	$playerdata_data = $_GET['playerData'];
 	$summoner_name = $player_data['name'];
 	
 	$result = $players->findOne(array(
